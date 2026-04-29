@@ -1,0 +1,75 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile Menu Toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu.classList.add('open');
+      // Change hamburger to X (simple implementation)
+      hamburger.children[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+      hamburger.children[1].style.opacity = '0';
+      hamburger.children[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    } else {
+      mobileMenu.classList.remove('open');
+      // Revert hamburger
+      hamburger.children[0].style.transform = 'none';
+      hamburger.children[1].style.opacity = '1';
+      hamburger.children[2].style.transform = 'none';
+    }
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) toggleMenu();
+    });
+  });
+
+  // Navbar Scroll Effect with requestAnimationFrame
+  const navbar = document.getElementById('navbar');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (lastScrollY > 20) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Scroll Reveal using IntersectionObserver (Highly Performant)
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // Optional: stop observing once revealed
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, revealOptions);
+
+  reveals.forEach(reveal => {
+    revealObserver.observe(reveal);
+  });
+});

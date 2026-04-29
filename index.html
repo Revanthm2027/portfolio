@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Revanth — AI/ML Engineer and startup-minded builder. I build practical systems that solve real problems at the intersection of AI, automation, and execution." />
+  <meta name="keywords" content="Revanth, AI Engineer, ML Engineer, Startup Builder, LangChain, OpenAI, Prompt Engineering, Portfolio" />
+  <meta name="author" content="Revanth" />
+  <meta property="og:title" content="Revanth — AI/ML Engineer & Builder" />
+  <meta property="og:description" content="Building practical AI systems that solve real problems. Projects, experience, and thinking." />
+  <meta property="og:type" content="website" />
+  <title>Revanth — AI/ML Engineer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-home">Revanth<span class="muted">.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download class="nav-resume-btn">Resume</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="resume.pdf" download class="mobile-link resume-dl">Download Resume</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="status-badge fade-up">
+          <span class="dot-pulse"></span>
+          <span class="mono small muted">Open to internships &amp; collaborations</span>
+        </div>
+
+        <h1 class="hero-title fade-up delay-1">
+          I build AI systems<br />
+          <span class="muted">that ship.</span>
+        </h1>
+
+        <p class="hero-sub fade-up delay-2">
+          AI/ML engineer and startup-minded builder. I work at the intersection of machine learning, 
+          automation, and product execution — turning ideas into working systems fast.
+        </p>
+
+        <div class="hero-ctas fade-up delay-3">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Let's Connect</a>
+          <a href="resume.pdf" download class="btn-ghost">Resume ↓</a>
+        </div>
+
+        <div class="hero-tags fade-up delay-4">
+          <span class="tag">AI / ML Engineering</span>
+          <span class="tag">Startup Builder</span>
+          <span class="tag">LangChain · OpenAI · PostgreSQL</span>
+          <span class="tag">Execution-focused</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="section-header reveal">
+          <span class="section-label mono">About</span>
+          <h2>Builder first.<br /><span class="muted">Engineer by discipline.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm Revanth — an AI/ML engineering student who operates at the intersection 
+              of systems thinking, rapid prototyping, and real-world execution. I don't 
+              stay in notebooks. I build things that work.
+            </p>
+            <p>
+              I use AI as a tool — not a crutch. My process starts with understanding 
+              the problem, designing the system, then using AI to accelerate research, 
+              prototyping, and iteration. The thinking is mine. The speed is multiplied 
+              by the tools I choose.
+            </p>
+            <p>
+              From building a trust verification browser extension to architecting a live 
+              skill credentialing platform with 200+ student onboarding — I'm defined by 
+              one question: <strong>does this solve a real problem?</strong>
+            </p>
+            <p>
+              I want to work with startups because that's where real learning happens. 
+              Fast decisions, full ownership, cross-functional exposure — that environment 
+              sharpens you faster than anything else. I'm not looking for a title. 
+              I'm looking for meaningful work.
+            </p>
+          </div>
+
+          <div class="about-stats reveal delay-1">
+            <div class="stat-item">
+              <span class="stat-num mono">3+</span>
+              <span class="stat-label">Production AI projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num mono">5+</span>
+              <span class="stat-label">Hackathons shipped</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num mono">200+</span>
+              <span class="stat-label">Students onboarded to CREDA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num mono">2</span>
+              <span class="stat-label">Startup internship experiences</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="section-header reveal">
+          <span class="section-label mono">Projects</span>
+          <h2>Things I've built<br /><span class="muted">that matter.</span></h2>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="mono muted small">01</span>
+              <span class="project-dot" style="background:#60a5fa;"></span>
+            </div>
+            <div class="project-body">
+              <h3>Prompt-to-Database Insight Generator</h3>
+              <p class="project-tagline muted">Natural language → SQL → structured insight. No analyst required.</p>
+
+              <div class="project-details">
+                <div>
+                  <p class="detail-label mono small">The Problem</p>
+                  <p>Business teams spend hours pulling data or waiting for analysts. The bottleneck is always the translation layer — from business question to query to insight.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">What I Built</p>
+                  <p>An LLM pipeline that converts natural language into optimized SQL via OpenAI function calling, runs it against a PostgreSQL backend, and returns structured insights with context. Used AI to accelerate the prompt architecture and testing — but designed the system logic and schema myself.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">Real Impact</p>
+                  <p>Non-technical users can query live databases in seconds. Removes analyst bottleneck entirely for routine data questions — a genuine force multiplier for small teams.</p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="tag">OpenAI API</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="mono muted small">02</span>
+              <span class="project-dot" style="background:#4ade80;"></span>
+            </div>
+            <div class="project-body">
+              <h3>CREDA — Skill Verification Platform</h3>
+              <p class="project-tagline muted">Skill verification that means something.</p>
+
+              <div class="project-details">
+                <div>
+                  <p class="detail-label mono small">The Problem</p>
+                  <p>Resumes are noise. Anyone can list "proficient in Python." Recruiters waste hours screening people who oversell skills. Talented builders with real ability get buried.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">What I Built</p>
+                  <p>A skill verification platform that validates practical competency through structured, real-world assessments — giving recruiters a trusted signal over self-reported credentials. Built full platform architecture, backend APIs, verification logic, and onboarding flows. Ran outreach campaigns that onboarded 200+ students to early access.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">Real Impact</p>
+                  <p>Live trial with real users. Addresses a broken hiring signal at the root. Operated independently — from architecture to user acquisition.</p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="tag">Next.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">REST APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="mono muted small">03</span>
+              <span class="project-dot" style="background:#fbbf24;"></span>
+            </div>
+            <div class="project-body">
+              <h3>Trust Layer — Browser Extension</h3>
+              <p class="project-tagline muted">Know what a website knows about you — before you interact.</p>
+
+              <div class="project-details">
+                <div>
+                  <p class="detail-label mono small">The Problem</p>
+                  <p>Users interact with hundreds of websites without any idea of what data is collected, how they're tracked, or whether the site is trustworthy. Privacy is invisible until it's too late.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">What I Built</p>
+                  <p>A browser extension performing real-time website analysis — privacy policy parsing, tracker detection, WHOIS lookups, SSL validation — surfaced as a clean, non-intrusive trust score overlay. Used AI for NLP-based privacy policy parsing; built the detection logic, extension architecture, and scoring model from scratch.</p>
+                </div>
+                <div>
+                  <p class="detail-label mono small">Real Impact</p>
+                  <p>Gives everyday users professional-grade website intelligence before they engage. Protects against dark patterns. Built for real browsing sessions — not just a demo.</p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Browser Extension APIs</span>
+                <span class="tag">Web Scraping</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="section-header reveal">
+          <span class="section-label mono">Experience</span>
+          <h2>Where I've worked<br /><span class="muted">and built.</span></h2>
+        </div>
+
+        <div class="exp-list">
+
+          <div class="exp-item reveal">
+            <div class="exp-left">
+              <span class="exp-dot" style="background:#60a5fa;"></span>
+              <div>
+                <span class="exp-type mono small muted">Internship</span>
+                <h3 class="exp-role">AI/ML Engineering Intern</h3>
+                <p class="exp-company muted">Equvinoxis Pvt Ltd</p>
+              </div>
+            </div>
+            <div class="exp-right">
+              <span class="exp-period mono small">2024</span>
+            </div>
+            <div class="exp-desc">
+              <p>Worked on production AI integrations in a startup environment. Built internal data pipeline tooling, contributed to model evaluation workflows, and shipped work end-to-end. No hand-holding — startup pace, full ownership.</p>
+              <div class="exp-tags">
+                <span class="tag">ML Tooling</span>
+                <span class="tag">Data Pipelines</span>
+                <span class="tag">Model Evaluation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-left">
+              <span class="exp-dot" style="background:#4ade80;"></span>
+              <div>
+                <span class="exp-type mono small muted">Collaboration</span>
+                <h3 class="exp-role">Growth &amp; Marketing Contributor</h3>
+                <p class="exp-company muted">Clerngy Eco Dispose India LLP</p>
+              </div>
+            </div>
+            <div class="exp-right">
+              <span class="exp-period mono small">2024</span>
+            </div>
+            <div class="exp-desc">
+              <p>Contributed to business development and digital marketing for an e-waste recycling startup. Applied analytical thinking to audience segmentation, growth strategy, and campaign optimization. Learned how to think about a business — not just code for one.</p>
+              <div class="exp-tags">
+                <span class="tag">Growth Strategy</span>
+                <span class="tag">Marketing</span>
+                <span class="tag">Startup Sales</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-left">
+              <span class="exp-dot" style="background:#fbbf24;"></span>
+              <div>
+                <span class="exp-type mono small muted">Competitions</span>
+                <h3 class="exp-role">Hackathon Builder</h3>
+                <p class="exp-company muted">Multiple Events</p>
+              </div>
+            </div>
+            <div class="exp-right">
+              <span class="exp-period mono small">2023 – Present</span>
+            </div>
+            <div class="exp-desc">
+              <p>5+ hackathons across AI, product, and full-stack categories. The value isn't trophies — it's shipping something real in 24–48 hours under pressure. That sharpens product instinct fast. Learned to scope intelligently, prioritize ruthlessly, and present clearly.</p>
+              <div class="exp-tags">
+                <span class="tag">5+ Hackathons</span>
+                <span class="tag">Rapid Prototyping</span>
+                <span class="tag">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-left">
+              <span class="exp-dot" style="background:#c084fc;"></span>
+              <div>
+                <span class="exp-type mono small muted">Founding</span>
+                <h3 class="exp-role">Co-builder</h3>
+                <p class="exp-company muted">CREDA Platform</p>
+              </div>
+            </div>
+            <div class="exp-right">
+              <span class="exp-period mono small">2024 – Present</span>
+            </div>
+            <div class="exp-desc">
+              <p>From idea to live trial — built the technical architecture, backend systems, and ran user acquisition independently. Onboarded 200+ students. This is founder-level work: strategy, build, and growth owned by one person.</p>
+              <div class="exp-tags">
+                <span class="tag">Product Architecture</span>
+                <span class="tag">200+ Users Onboarded</span>
+                <span class="tag">Outreach & Growth</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="section-header reveal">
+          <span class="section-label mono">Skills</span>
+          <h2>What I work with<br /><span class="muted">every day.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <p class="skill-category">AI / Machine Learning</p>
+            <div class="skill-tags">
+              <span class="tag">LangChain</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Function Calling</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">RAG Pipelines</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Model Evaluation</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-category">Backend Development</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-category">Databases</p>
+            <div class="skill-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">SQL Query Design</span>
+              <span class="tag">Schema Architecture</span>
+              <span class="tag">pgvector</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-category">Automation</p>
+            <div class="skill-tags">
+              <span class="tag">Apify</span>
+              <span class="tag">Web Scraping</span>
+              <span class="tag">Browser Extension APIs</span>
+              <span class="tag">Claude Workflows</span>
+              <span class="tag">Data Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-category">Product & Execution</p>
+            <div class="skill-tags">
+              <span class="tag">Rapid Prototyping</span>
+              <span class="tag">System Design</span>
+              <span class="tag">End-to-End Shipping</span>
+              <span class="tag">User Onboarding</span>
+              <span class="tag">Vibecoding</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-category">Business & Sales</p>
+            <div class="skill-tags">
+              <span class="tag">Growth Strategy</span>
+              <span class="tag">Cold Outreach</span>
+              <span class="tag">Audience Segmentation</span>
+              <span class="tag">Startup Business Models</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="section-header reveal">
+          <span class="section-label mono">Contact</span>
+          <h2>Let's build something<br /><span class="muted">worth talking about.</span></h2>
+        </div>
+
+        <p class="contact-intro reveal">
+          If you're working on something ambitious — a startup, a product, an AI system — 
+          I want to hear about it. I'm actively looking for internships and collaborations 
+          with people who move fast and build real things.
+        </p>
+
+        <div class="contact-links reveal">
+          <a href="mailto:revanthm1009@gmail.com" class="contact-card" id="contact-email">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-info">
+              <p class="contact-label">Email</p>
+              <p class="mono small muted">revanthm1009@gmail.com</p>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="https://github.com/Revanthm2027" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-info">
+              <p class="contact-label">GitHub</p>
+              <p class="mono small muted">github.com/Revanthm2027</p>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/revanthmadasu" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-info">
+              <p class="contact-label">LinkedIn</p>
+              <p class="mono small muted">linkedin.com/in/revanthmadasu</p>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="https://x.com/revanth_builds" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-x">
+            <div class="contact-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <div class="contact-info">
+              <p class="contact-label">X / Twitter</p>
+              <p class="mono small muted">@revanth_builds</p>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="availability-badge reveal">
+          <span class="dot-pulse"></span>
+          <p class="small">Currently open to internships, part-time roles, and project collaborations. <span class="text-dim">Responds within 24 hours.</span></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="mono small muted">© 2026 Revanth. Built intentionally.</span>
+        <div class="footer-links">
+          <a href="https://github.com/Revanthm2027" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/revanthmadasu" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:revanthm1009@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

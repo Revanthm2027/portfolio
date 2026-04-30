@@ -501,6 +501,26 @@ header.scrolled {
   gap: 2rem;
 }
 
+.project-image-wrapper {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.02);
+}
+
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);

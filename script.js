@@ -82,30 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
-        const headerOffset = 64; // Navbar height
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const startPosition = window.pageYOffset;
-        const distance = elementPosition - headerOffset;
-        const duration = 300; // milliseconds
-        let start = null;
-
-        function step(timestamp) {
-          if (!start) start = timestamp;
-          const progress = timestamp - start;
-          // easeOutCubic
-          const easeProgress = 1 - Math.pow(1 - progress / duration, 3);
-          const currentPosition = startPosition + distance * easeProgress;
-          
-          window.scrollTo(0, currentPosition);
-          
-          if (progress < duration) {
-            window.requestAnimationFrame(step);
-          } else {
-            window.scrollTo(0, startPosition + distance);
-          }
-        }
-        
-        window.requestAnimationFrame(step);
+        const headerOffset = 64;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: elementPosition - headerOffset,
+          behavior: 'smooth'
+        });
       }
     });
   });

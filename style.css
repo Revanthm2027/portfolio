@@ -1,17 +1,17 @@
 :root {
-  --bg-primary: #faf9f7;
-  --bg-secondary: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f5f4f0;
-  --border: #e8e5e0;
-  --border-subtle: #f0eeea;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-muted: #7a7a7a;
-  --accent: #2d5be3;
-  --accent-hover: #1e44b8;
-  --accent-gradient: linear-gradient(135deg, #2d5be3 0%, #6366f1 100%);
-  --bg-gradient: #faf9f7;
+  --bg-primary: #f4f2ed;
+  --bg-secondary: #fbfaf8;
+  --bg-card: #fbfaf8;
+  --bg-card-hover: #f2efe9;
+  --border: #e0ddd5;
+  --border-subtle: #ebe8e0;
+  --text-primary: #2c2a29;
+  --text-secondary: #575350;
+  --text-muted: #857f7a;
+  --accent: #b0705b;
+  --accent-hover: #9c624e;
+  --accent-gradient: linear-gradient(135deg, #b0705b 0%, #c2826d 100%);
+  --bg-gradient: #f4f2ed;
 }
 
 * {
@@ -335,13 +335,13 @@ header.scrolled {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(45, 91, 227, 0.2);
+  box-shadow: 0 4px 12px rgba(176, 112, 91, 0.2);
 }
 
 .btn-primary:hover {
   opacity: 1;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(45, 91, 227, 0.3);
+  box-shadow: 0 6px 16px rgba(176, 112, 91, 0.3);
 }
 
 .btn-secondary {

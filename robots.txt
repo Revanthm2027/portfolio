@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://revanth-madasu.vercel.app/sitemap.xml
